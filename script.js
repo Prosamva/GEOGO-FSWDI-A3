@@ -9,7 +9,7 @@ const acTags = ['pm2_5', 'pm10', 'so2', 'no2', 'o3', 'co']
 
 var lat, lon, today;
 
-const apiKey = 'de225081d345dc2b7ef4f862886fc07a'
+const apiKey = 'a871dce4502a7f61db18d8733a5a100e'
 var aqi = 1
 var cityName = 'Delhi'
 var cities = ['Delhi', 'Tokyo', 'New York']
