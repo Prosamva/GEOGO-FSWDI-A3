@@ -9,7 +9,7 @@ const acTags = ['pm2_5', 'pm10', 'so2', 'no2', 'o3', 'co']
 
 var lat, lon, today;
 
-const apiKey = 'a871dce4502a7f61db18d8733a5a100e'
+const apiKey = 'de225081d345dc2b7ef4f862886fc07a'
 var aqi = 1
 var cityName = 'Delhi'
 var cities = ['Delhi', 'Tokyo', 'New York']
@@ -128,7 +128,7 @@ function setRainfall(){
 
 function refreshAQI() {
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/air_pollution?lat='+lat+'&lon='+lon+'&appid='+apiKey
+        url: 'https://api.openweathermap.org/data/2.5/air_pollution?lat='+lat+'&lon='+lon+'&appid='+apiKey
     }).done(function(airData){
         var values = airData.list[0]
         var comps = values.components
